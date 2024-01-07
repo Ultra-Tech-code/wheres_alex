@@ -1,11 +1,11 @@
-# Where's Alex private multiparty game on Aleo 
-Hide Alex and challenge a friend to find Alex -- winner gets the pot!
+# Where's Adam private multiparty game on Aleo 
+Hide Adam and challenge a friend to find Adam -- winner gets the pot!
 
-Alex's location is hidden onchain from the other party, and the entire game is hidden from everyone on chain so you can bet as much as you want without judgement :)
+Adam's location is hidden onchain from the other party, and the entire game is hidden from everyone on chain so you can bet as much as you want without judgement :)
 
 Built with Puzzle Wallet & Puzzle SDK -- uses programmable private multisigs under the hood!
 
-### Where's Alex Leo Program Docs: [link](https://github.com/puzzlehq/wheres_alex/tree/main/program)
+### Where's Adam Leo Program Docs: [link](https://github.com/puzzlehq/wheres_alex/tree/main/program)
  
 ### Puzzle SDK Docs: [link](https://docs.puzzle.online/guides/getting_started/)
 ### Puzzle Devtools Site: [link](https://dev.puzzle.online/)
@@ -14,16 +14,16 @@ Built with Puzzle Wallet & Puzzle SDK -- uses programmable private multisigs und
 ### Puzzle Wallet iOS Download [link](https://testflight.apple.com/join/bikon7Nj)
 
 
-[<img src="https://github.com/puzzlehq/serengeti/assets/39972641/9650a6b8-5680-4a53-b6c6-608b8809d38e">](https://wheresalex.puzzle.online/)
+[<img src="./banner.png">](https://wheresalex.puzzle.online/)
 
 
-# About Where's Alex?
-Where's Alex? is a fun experiment that aims to be a fun 1v1 game to showcase how to have a completely private multiparty game on Aleo! This technical overview reviews the issues with multiparty privacy and how this is solved using programmable private multisigs and incentives!
+# About Where's Adam?
+Where's Adam? is a fun experiment that aims to be a fun 1v1 game to showcase how to have a completely private multiparty game on Aleo! This technical overview reviews the issues with multiparty privacy and how this is solved using programmable private multisigs and incentives!
 
 <br /> 
 
-## What is the "Where's Alex?" game?
-Hide alex in a secret location and wager another person on Aleo to guess where you hid Alex. If they guess wrong, then you win the prize pot between you both! 
+## What is the "Where's Adam?" game?
+Hide alex in a secret location and wager another person on Aleo to guess where you hid Adam. If they guess wrong, then you win the prize pot between you both! 
 
  <br />
 
@@ -41,13 +41,13 @@ The FE for the game utilizes key multisig features using the Puzzle Wallet and P
 The game is split into 3 Leo Programs described below:
 1. Puzzle Pieces token program (with _n_ of _n_ programmable multisig functions)
 2. Multiparty PVP utils program
-3. Where's Alex program
+3. Where's Adam program
 
 <br /> 
 
 If you're interested in building your own multiparty game on Aleo, fork this repo and give it a shot! 
 
-# How to play Where's Alex
+# How to play Where's Adam
 1. Starting a new game (challenger)
 - mint Puzzle Pieces if you don't have already
 - challenge another Aleo address
@@ -69,7 +69,7 @@ If you're interested in building your own multiparty game on Aleo, fork this rep
 - Finish the geam and payout the wagers to you if the opponent guessed wrong or the opponent if they guessed right!
 
 
-# How Where's Alex showcases how to solve issues in multiparty privacy
+# How Where's Adam showcases how to solve issues in multiparty privacy
 
 ## Defining Multiparty Privacy
 Multiparty privacy is a broad category and can be split into multiple categories based on use cases like:
@@ -136,7 +136,7 @@ These are the last most common complaints of an online poker game -- opponents w
 
 <br />
 
-## How Where's Alex solves the issues with multiparty privacy
+## How Where's Adam solves the issues with multiparty privacy
 
 <br />
 
@@ -159,7 +159,7 @@ This alleviates the concern that your actions will be carried out and reach the 
 <br />
 
 **3. Multiparty computation attacks: timeout and denial of service** <br />
-The secret sauce of Where's Alex is solving the rage-quit, colllusion and denial of service problem with incentive engineering and game design.
+The secret sauce of Where's Adam is solving the rage-quit, colllusion and denial of service problem with incentive engineering and game design.
 
 <br />
 
@@ -170,16 +170,16 @@ Because the game is a simple 1v1 -- we also don't have to worry about the collus
 
 <br />
 
-# How Where's Alex works
+# How Where's Adam works
 
 <br />
 
 Below we'll walk through the following:
-1. How the Where's Alex? game works at a high level with Leo programs, Puzzle Wallet, and Puzzle SDK
-2. How the Where's Alex? Leo programs work in depth
+1. How the Where's Adam? game works at a high level with Leo programs, Puzzle Wallet, and Puzzle SDK
+2. How the Where's Adam? Leo programs work in depth
 
 
-## High level overview of Where's Alex Leo program on Aleo
+## High level overview of Where's Adam Leo program on Aleo
 
 <br />
 
@@ -201,7 +201,7 @@ PRIVATE_KEY={MS_PK || P1_PK | P2_PK}
 
 <br />
 
-## High level overview of Where's Alex with the Puzzle Wallet and Puzzle SDK
+## High level overview of Where's Adam with the Puzzle Wallet and Puzzle SDK
 
 <br />
 
@@ -211,6 +211,6 @@ More information on the Puzzle Wallet and Puzzle SDK can be found [here](https:/
 
 <br />
 
-# Walking through the Where's Alex Leo programs
+# Walking through the Where's Adam Leo programs
 
 Repo [here](https://github.com/puzzlehq/wheres_alex/tree/main/program)
