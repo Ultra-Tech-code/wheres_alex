@@ -5,7 +5,7 @@ import { Answer } from '@state/RecordTypes/wheres_alex_vxxx';
 type HideAlexProps = {
   setAnswer: (answer: Answer) => void;
   answer?: Answer;
-  hiding: boolean; // are we hiding alex? or finding alex?
+  hiding: boolean; // are we hiding adam? or finding adam?
 };
 
 function ChooseAlexLocation({ setAnswer, answer, hiding }: HideAlexProps) {
@@ -28,11 +28,11 @@ function ChooseAlexLocation({ setAnswer, answer, hiding }: HideAlexProps) {
       <p className='self-center whitespace-nowrap text-center text-sm font-extrabold tracking-tight text-primary-green'>
         {((): string => {
           if (answer === undefined && hiding) {
-            return 'Choose where to hide Alex';
+            return 'Choose where to hide Adam';
           } else if (hiding) {
-            return `You chose to hide Alex ${answer}`;
+            return `You chose to hide Adam ${answer}`;
           } else {
-            return `You think Alex is ${answer}`;
+            return `You think Adam is ${answer}`;
           }
         })()}
       </p>

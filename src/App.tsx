@@ -16,6 +16,7 @@ import RenegeGame from './pages/Renege/_01_Renege.js';
 import { useInitGame } from './hooks/initGame.js';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import RevealAnswer from './pages/RevealAnswer/index.js';
+import backgroundImage from './assets/background-image.jpg';
 
 const Rerouter = () => {
   const navigate = useNavigate();
@@ -34,7 +35,12 @@ function App() {
   useInitGame();
 
   return (
-    <div className='App flex min-h-screen justify-center bg-neutral-900'>
+    <div className="flex items-center justify-center min-h-screen bg-cover bg-center h-screen relative"
+    style={{ backgroundImage: `url(${backgroundImage})` }}>
+
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+
+    <div className="relative z-10 ">
       <QueryClientProvider client={queryClient}>
         <Router>
           <Rerouter />
@@ -65,6 +71,7 @@ function App() {
           </div>
         </Router>
       </QueryClientProvider>
+      </div>
     </div>
   );
 }
